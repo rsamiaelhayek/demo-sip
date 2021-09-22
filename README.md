@@ -4,12 +4,13 @@
 
 Use with Python 3 (pre-requisite)
 
-1. Clone this repo then go to dir\
+1. Clone this repo then go to dir
 
-2. Open in one terminal:\
-`$ python3 main.py`
+2. Open in one terminal:
+   
+   `$ python3 main.py`
 
-3. Open in another terminal:\
+4. Open in another terminal:
   - **Test with no data**\
     `$echo -n | nc localhost 9999`
 
