@@ -29,7 +29,7 @@ Empty request
 
 ### **Test with wrong AOR**
 ```shell
-echo -n '0142e2fa3543cb32b' | nc localhost 9999`
+echo -n '0142e2fa3543cb32b' | nc localhost 9999
 ```
 
 #### Output:
@@ -39,7 +39,7 @@ echo -n '0142e2fa3543cb32b' | nc localhost 9999`
     
 ### **Test with correct AOR from list**
 ```shell
-echo -n 01546f59a9033db700000100610001 | nc localhost 9999`
+echo -n 01546f59a9033db700000100610001 | nc localhost 9999
 ```
 
 or _(requires jq to be installed)_
