@@ -6,7 +6,7 @@ A Python tool that loads a dump of SIP telephony registrations and then starts l
 
 ## How to use
 
-ℹ️ **Pre-requisite:** Python 3 _(tested with Python 3.9.7 on macOS Big Sur)_️
+ℹ️ **Pre-requisite:** Python 3 _(tested with Python 3.9.7 on macOS Big Sur)️_
 
 1. Clone this repo then navigate to its root
 2. Start the server script by running the following in a terminal session:
