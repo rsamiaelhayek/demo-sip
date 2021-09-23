@@ -12,14 +12,14 @@ A Python tool that loads a dump of SIP telephony registrations and then starts l
 2. Start the server script by running the following in a terminal session:
    
    ```shell
-   $ python3 main.py
+   python3 main.py
    ```
 
 3. Now in a different terminal session we'll use netcat (client) to run a few search tests:
    
 ### **Test with no data**
-``` shell
-$ echo -n | nc localhost 9999`
+```shell
+echo -n | nc localhost 9999
 ```
 
 #### Output:
@@ -29,7 +29,7 @@ Empty request
 
 ### **Test with wrong AOR**
 ```shell
-$ echo -n '0142e2fa3543cb32b' | nc localhost 9999`
+echo -n '0142e2fa3543cb32b' | nc localhost 9999`
 ```
 
 #### Output:
@@ -39,13 +39,13 @@ $ echo -n '0142e2fa3543cb32b' | nc localhost 9999`
     
 ### **Test with correct AOR from list**
 ```shell
-$ echo -n 01546f59a9033db700000100610001 | nc localhost 9999`
+echo -n 01546f59a9033db700000100610001 | nc localhost 9999`
 ```
 
 or _(requires jq to be installed)_
 
 ```shell
-$ echo -n 01546f59a9033db700000100610001 | nc localhost 9999 | jq .
+echo -n 01546f59a9033db700000100610001 | nc localhost 9999 | jq .
 ```  
 
 #### Output w/o jq:
