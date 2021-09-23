@@ -14,8 +14,9 @@ with open('regs') as f:
         jsonDict = json.loads(jsonObj)
         jsonList.append(jsonDict)
 
-# Create a TCP/IP socket
+# Create a TCP/IP socket and set timeout to 10s
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket.setdefaulttimeout(10)
 
 # Bind the socket to the port
 server_address = ('localhost', 9999)
@@ -37,7 +38,7 @@ while True:
     nodata = 'Empty request'
     emptyline = ' '
 
-    # If request empty
+    # If request is empty
     if not data:
         connection.send(nodata.encode())
     print("Received data:", stringdata)
