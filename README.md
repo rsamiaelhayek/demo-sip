@@ -6,7 +6,7 @@ A Python tool that loads a dump of SIP telephony registrations and then starts l
 
 ## How to use
 
-**<span style="color:orange"><u>Pre-requisite:</u></span>** Python 3 _(tested with Python 3.9.7 on macOS Big Sur)_
+ℹ️ **Pre-requisite:** Python 3 _(tested with Python 3.9.7 on macOS Big Sur)_️
 
 1. Clone this repo then navigate to its root
 2. Start the server script by running the following in a terminal session:
@@ -74,7 +74,7 @@ echo -n 01546f59a9033db700000100610001 | nc localhost 9999 | jq .
 
 ### **Test with correct AOR from list but with added delay > 10 sec to trigger a timeout**
 
-**<span style="color:red"><u>Note:</u> After running this command the socket will close, to re-open it run the command from Step 2**
+⚠️ **After running this command the socket will close, to re-open it run the command from Step 2 ⚠️**
 
 ```shell
 echo -n 01546f59a9033db700000100610001 | nc localhost 9999 -i 11
